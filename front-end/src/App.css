@@ -1,3 +1,11 @@
+:root{
+    --main-background : #141414;
+    --dark-color : #3B3B3B;
+    --light-color : #fff;
+    --dark-blue : #546E7B;
+    --card-color :#154360 ;
+    --Main-font : 'Times New Roman', Times, serif;
+}
 body{
-    ba
+    background-color: var(--main-background);
 }
