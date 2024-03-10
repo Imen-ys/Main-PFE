@@ -4,6 +4,7 @@ import Nav from './components/nav/Nav'
 import Menu from './components/Menu/Menu'
 import Dashboard from './components/Dashboard/Dashboard'
 import Client from './components/Client/Client'
+import AddClient from './components/AddClient/AddClient'
 const App = () => {
     return(
         <>
@@ -15,6 +16,7 @@ const App = () => {
                     <Routes>
                         <Route path='/' element={<Dashboard/>}/>
                         <Route path='/Client' element={<Client/>} />
+                        <Route path='/AddClient' element={<AddClient/>} />
                     </Routes>
                 </div>
             </Router>

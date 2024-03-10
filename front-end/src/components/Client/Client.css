@@ -1,0 +1,53 @@
+/* Table style */
+.table{
+    color: var(--light-color);
+    font-size: 10px;
+    margin: 20px;
+    height: 50px;
+}
+/* buttons style */
+button{
+    border: none;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+button a{
+    color: var(--dark-color);
+    font-weight: 600;
+}
+button:hover{
+    background-color: var(--card-color);
+    color: var(--light-color);
+}
+.item{
+    border: outset 1px var(--light-color);
+}
+.Btn{
+    color: var(--light-color);
+    margin: 12px 0px 20px 10px;
+    font-size: 10px;
+}
+.Btn:hover{
+    box-shadow: 0 3px 10px rgba(0, 10, 20, 0.8);
+}
+.ajouter{
+    font-size: 10px;
+    margin-left: 405px;
+}
+/* inputs style */
+.input{
+    width: 80px;
+    height: 20px;
+    background-color: transparent;
+    margin: 10px 10px 15px 320px;
+    font-size: 10px;
+    color: var(--light-color);
+}
+.input:focus{
+    border: none;
+}
+
+/* .main-table{
+    color: black;
+    font-size: 10px;
+} */

@@ -9,3 +9,10 @@
 body{
     background-color: var(--main-background);
 }
+a{
+    color:var(--light-color);
+    text-decoration: none;
+}
+a:hover{
+    color:var(--light-color);
+}
