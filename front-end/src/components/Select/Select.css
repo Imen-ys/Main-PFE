@@ -3,7 +3,7 @@
     color: var(--light-color);
     font-size: 10px;
 }
-#Selector{
+.Selector{
     background-color: transparent;
     font-size: 12px;
     border: 2px outset var(--card-color);

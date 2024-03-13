@@ -5,7 +5,7 @@ const Input = (props) => {
         <>
             <div className="main" >
                 <label for="" className="name">{props.name}</label>
-                <input type={props.type} id="input" name=""/><br/>
+                <input type={props.type} id={props.id} className="input" name="" value={props.value}/><br/>
             </div>
         </>
     )
