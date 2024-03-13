@@ -20,7 +20,7 @@ button:hover{
     color: var(--light-color);
 }
 .item{
-    border: outset 1px var(--light-color);
+    border: solid 1px var(--light-color);
 }
 .Btn{
     color: var(--light-color);
@@ -33,6 +33,7 @@ button:hover{
 .ajouter{
     font-size: 10px;
     margin-left: 405px;
+    padding:5px;
 }
 /* inputs style */
 .input{
@@ -46,8 +47,6 @@ button:hover{
 .input:focus{
     border: none;
 }
-
-/* .main-table{
-    color: black;
-    font-size: 10px;
-} */
+.button{
+    padding:2px;
+}

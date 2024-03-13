@@ -1,0 +1,22 @@
+.main {
+    display: block;
+    flex-wrap: wrap;
+    height: 30px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.name {
+    font-size: 10px;
+    color: var(--light-color);
+}
+
+#input {
+    background: transparent;
+    border: 1px solid var(--light-color);
+    width: 70px;
+    height: 20px;
+    color: var(--light-color);
+    width: 100%;
+    border: 2px outset var(--card-color);
+}

@@ -65,8 +65,8 @@ const Client = () => {
                         <td>@mdo</td>
                         <td>@mdo</td>
                         <td>
-                            <button className='update'><a href="#">Update</a></button>
-                            <button className='paiement'><a href="#">Paiement</a></button>
+                            <button className='update button'><a href="#">Update</a></button>
+                            <button className='paiement button'><a href="#">Paiement</a></button>
                         </td>
                     </tr>
                     <tr >
@@ -76,8 +76,8 @@ const Client = () => {
                         <td>@mdo</td>
                         <td>@mdo</td>
                         <td>
-                            <button className='update'><a href="#">Update</a></button>
-                            <button className='paiement'><a href="#">Paiement</a></button>
+                            <button className='update button'><a href="#">Update</a></button>
+                            <button className='paiement button'><a href="#">Paiement</a></button>
                         </td>
                     </tr>
                 </tbody>

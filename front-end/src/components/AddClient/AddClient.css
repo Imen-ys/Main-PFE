@@ -1,4 +1,7 @@
-input{
-    font-size: 10px;
-    background-color: blue;
+.Btn{
+    font-size: 12px;
+    background-color: var(--card-color);
+    color: var(--light-color);
+    border: 2px outset var(--card-color);
+    padding: 5px;
 }

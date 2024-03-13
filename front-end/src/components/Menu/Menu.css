@@ -29,5 +29,6 @@ p{
 .item:hover{
     /* background: var(--card-color); */
     margin-left: 15px;
+    /* background: var(--Menu-hover); */
     transition: 0.8s;
 }

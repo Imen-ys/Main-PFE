@@ -1,24 +1,20 @@
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import "./App.css"
-import Nav from './components/nav/Nav'
-import Menu from './components/Menu/Menu'
-import Dashboard from './components/Dashboard/Dashboard'
-import Client from './components/Client/Client'
-import AddClient from './components/AddClient/AddClient'
+import {Nav,Style,Menu,Dashboard,Client,AddClient} from "./components/index"
+
 const App = () => {
     return(
         <>
             <Router>
                 <Nav/>
-                {/* <Main/> */}
-                <div style={{display:'flex'}}>
+                <Style>
                     <Menu/>
                     <Routes>
                         <Route path='/' element={<Dashboard/>}/>
                         <Route path='/Client' element={<Client/>} />
                         <Route path='/AddClient' element={<AddClient/>} />
                     </Routes>
-                </div>
+                </Style>
             </Router>
         </>
     )

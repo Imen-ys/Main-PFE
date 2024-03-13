@@ -1,50 +1,52 @@
 import './Dashboard.css'
-import { useState } from 'react';
-import {PieChart, Pie,Sector,Cell,Bar,BarChart,XAxis, YAxis, Tooltip, Legend, CartesianGrid } from "recharts"
+import {Card } from '../index';
+
+
 const Dashboard = () => {
-    const [statistic, setstatistic] = useState(false);
-    const data = [
-            {name : "Nomber de Facture vente", value:13948, fill: '#d9b277'},
-            {name : "Nomber de Facture service", value:47277,fill:'#a7cae6'},
-    ]
-    const click = () =>{
-        setstatistic(!statistic)
-    }
     return (
         <>
-        <div style={{display:'inline-block'}}>
+        <div className='main'>
 
-        <div className='card' onClick={click}>
-            <p className='container'>Factures</p>
-            {/* <button>More Info</button> */}
-        </div>
+            <Card title="Factures"
+                name1="Nomber de Facture vente" value1={13948}
+                name2="Nomber de Facture service" value2={47277}
+                name3="Nomber des Avoirs services" value3={688}
+                name4="Nomber des Avoirs services" value4={2781}
+            />
 
+            <Card title="Client VIP"
+                name1="Nomber de Client VIP" value1={65}
+                name2="Nomber de Client VIP Actif" value2={65}
+                name3="Nomber de Client VIP Inactif" value3={65}
+                name4="Nomber des Client VIP Bloque" value4={0}
+            />
 
-        <div className='statistic bg-dark' >
-            <PieChart width={200} height={140}>
-                <Pie
-                    dataKey="value"
-                    isAnimationActive={false}
-                    data={data}
-                    cx="55%"
-                    cy="40%"
-                    outerRadius={30}
-                    label ={{fontSize: 10,}}
-                />
-            </PieChart>
+            <Card title="Suspensions"
+                name1="Nomber de toutes les Suspensions" value1={3}
+                name2="Nomber de  Suspensions" value2={0}
+                name3="Nomber de date a Suspension" value3={688}
+            />
 
-            <div className='infos'>
-                <div style={{display:"flex"}}>
-                    <div className='info' style={{background:"#d9b277"}}></div>
-                    <p className='details'>Nomber de Facture vente</p>
-                </div>
-                <div style={{display:"flex"}}>
-                    <div className='info' style={{background:"#a7cae6"}}></div>
-                    <p className='details'>Nomber de Facture service</p>
-                </div>
-            </div>
-        </div>
-     
+            <Card title="Paiment"
+                name1="Nomber de paiment " value1={69237}
+                name2="Nomber de paiment complet" value2={69104}
+                name3="Nomber de paiment partie" value3={87}
+                name4="Nomber de paiment annule" value4={46}
+            />
+
+            <Card title="Paiment"
+                name1="Nomber de paiment par cheque" value1={13948}
+                name2="Nomber de paiment par espece" value2={47277}
+                name3="Nomber de paiment par virement" value3={807}
+                name4="Nomber de paiment par CIB" value4={0}
+                name5="Nomber de paiment par autre" value5={688}
+            />
+
+            <Card title="Paiment"
+                name1="Nomber de paiment proformat" value1={0}
+                name2="Nomber de paiment proformat CRM" value2={0}
+                name3="Nomber de paiment proformat Site" value3={0}
+            />
         </div>
         </>
     )

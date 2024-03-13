@@ -1,19 +1,11 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-.card{
-    background-color: var(--card-color);
-    margin: 30px 0px 10px 30px;
-    color: var(--light-color);
-    height: 60px;
-    cursor: pointer;
-    width: 230px;
-    font-family:var(--Main-font);
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
 }
 .statistic{
     width: 230px;
-    height: 180px;
+    height: 250px;
     margin: 0px 0px 0px 30px;
     border: 1px solid var(--light-color);
 }
@@ -22,12 +14,8 @@
     height: 15px;
     border: 1px solid #fff;
     margin: 5px;
-    /* margin-top: -10px; */
 }
 .details{
     font-size: 10px;
     margin: 5px 0px 4px 0px;
-}
-.infos{
-    margin: -14px 3px 5px 0px;
 }

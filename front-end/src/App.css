@@ -1,9 +1,11 @@
 :root{
     --main-background : #141414;
+    /* --main-background : #010A21 ; */
     --dark-color : #3B3B3B;
     --light-color : #fff;
     --dark-blue : #546E7B;
     --card-color :#154360 ;
+    --Menu-hover : #12202c;
     --Main-font : 'Times New Roman', Times, serif;
 }
 body{
