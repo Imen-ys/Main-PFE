@@ -1,52 +1,21 @@
-/* Table style */
-.table{
-    color: var(--light-color);
-    font-size: 10px;
-    margin: 20px;
-    height: 50px;
-}
-/* buttons style */
-button{
-    border: none;
-    margin-left: 5px;
-    border-radius: 3px;
-}
-button a{
-    color: var(--dark-color);
-    font-weight: 600;
-}
-button:hover{
-    background-color: var(--card-color);
-    color: var(--light-color);
-}
-.item{
-    border: solid 1px var(--light-color);
-}
-.Btn{
-    color: var(--light-color);
-    margin: 12px 0px 20px 10px;
-    font-size: 10px;
-}
-.Btn:hover{
-    box-shadow: 0 3px 10px rgba(0, 10, 20, 0.8);
-}
-.ajouter{
-    font-size: 10px;
-    margin-left: 405px;
-    padding:5px;
-}
-/* inputs style */
-.input{
-    width: 80px;
+.Search{
     height: 20px;
-    background-color: transparent;
-    margin: 10px 10px 15px 320px;
-    font-size: 10px;
-    color: var(--light-color);
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: var(--light-color);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-.input:focus{
+.Search:hover input{
+    width: 400px;
+}
+.Search input{
+    width: 0;
+    outline: none;
     border: none;
-}
-.button{
-    padding:2px;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
 }

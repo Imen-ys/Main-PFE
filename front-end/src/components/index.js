@@ -9,5 +9,6 @@ export { default as Card } from "./Card/Card";
 export { default as Statistic } from "./Statistic/Statistic";
 export { default as Select } from "./Select/Select";
 export { default as Input } from "./Input/Input";
+export {default as Item} from './Item/Item'
 
 

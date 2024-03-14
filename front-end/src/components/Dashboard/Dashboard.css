@@ -1,14 +1,14 @@
-.main{
+/* .main{
     display: flex;
     flex-wrap: wrap;
     height: 200px;
-}
-.statistic{
+} */
+/* .statistic{
     width: 230px;
     height: 250px;
     margin: 0px 0px 0px 30px;
     border: 1px solid var(--light-color);
-}
+} */
 .info{
     width: 15px;
     height: 15px;

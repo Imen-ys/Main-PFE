@@ -3,7 +3,7 @@
 const Style = (props) => {
     return(
         <>
-        <div style={{display:'flex'}}>
+        <div className="d-flex">
             {props.children}
         </div>
         </>

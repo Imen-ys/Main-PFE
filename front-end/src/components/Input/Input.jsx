@@ -3,9 +3,14 @@ import "./Input.css"
 const Input = (props) => {
     return(
         <>
-            <div className="main" >
-                <label for="" className="name">{props.name}</label>
-                <input type={props.type} id={props.id} className="input" name="" value={props.value}/><br/>
+            <div className="block flex-wrap h-5 m-3">
+                <label className="text-xs">{props.name}</label>
+                <input
+                    type={props.type}
+                    id="input"
+                    className="bg-transparent border border-solid border-[--light-color] w-full h-5 text-[--light-color] border-2 border-outset focus:border-transparent"
+                    name=""
+                />
             </div>
         </>
     )

@@ -5,7 +5,7 @@ import {Card } from '../index';
 const Dashboard = () => {
     return (
         <>
-        <div className='main'>
+        <div className='flex flex-wrap h-200'>
 
             <Card title="Factures"
                 name1="Nomber de Facture vente" value1={13948}

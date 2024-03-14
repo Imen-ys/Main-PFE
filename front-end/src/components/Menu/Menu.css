@@ -1,11 +1,11 @@
-.Menu{
+/* .Menu{
     width: 100px;
     height: 100%;
     font-family:var(--Main-font)
-}
-p{
+} */
+/* p{
     color:aliceblue;
-}
+} */
 .choices{
     color:var(--light-color);
     font-size: 10px;
@@ -27,8 +27,6 @@ p{
     cursor: pointer;
 }
 .item:hover{
-    /* background: var(--card-color); */
     margin-left: 15px;
-    /* background: var(--Menu-hover); */
     transition: 0.8s;
 }
