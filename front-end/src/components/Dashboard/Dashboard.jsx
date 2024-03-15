@@ -1,5 +1,5 @@
 import './Dashboard.css'
-import {Card } from '../index';
+import {PieChart_Card , StraightPieChart_Card , TowLevelPieChart_Card } from '../index';
 
 
 const Dashboard = () => {
@@ -7,45 +7,49 @@ const Dashboard = () => {
         <>
         <div className='flex flex-wrap h-200'>
 
-            <Card title="Factures"
-                name1="Nomber de Facture vente" value1={13948}
-                name2="Nomber de Facture service" value2={47277}
-                name3="Nomber des Avoirs services" value3={688}
-                name4="Nomber des Avoirs services" value4={2781}
+            <PieChart_Card title="Factures"
+                Key_name1="Nomber de Facture vente" Key_value1={13948}
+                Key_name2="Nomber de Facture service" Key_value2={47277}
             />
 
-            <Card title="Client VIP"
-                name1="Nomber de Client VIP" value1={65}
-                name2="Nomber de Client VIP Actif" value2={65}
-                name3="Nomber de Client VIP Inactif" value3={65}
-                name4="Nomber des Client VIP Bloque" value4={0}
+            <PieChart_Card title="Avoires"
+                Key_name1="Nomber des Avoirs vente" Key_value1={688}
+                Key_name2="Nomber des Avoirs services" Key_value2={2781}
             />
 
-            <Card title="Suspensions"
-                name1="Nomber de toutes les Suspensions" value1={3}
-                name2="Nomber de  Suspensions" value2={0}
-                name3="Nomber de date a Suspension" value3={688}
+
+            <StraightPieChart_Card title="Client VIP"
+                Key_name1="Nomber de Client VIP" Key_value1={65}
+                Key_name2="Nomber de Client VIP Actif" Key_value2={65}
+                Key_name3="Nomber de Client VIP Inactif" Key_value3={65}
+                Key_name4="Nomber des Client VIP Bloque" Key_value4={0}
             />
 
-            <Card title="Paiment"
-                name1="Nomber de paiment " value1={69237}
-                name2="Nomber de paiment complet" value2={69104}
-                name3="Nomber de paiment partie" value3={87}
-                name4="Nomber de paiment annule" value4={46}
+            <TowLevelPieChart_Card title="Suspensions"
+                Key_name1="Nomber de toutes les Suspensions" Key_value1={3}
+                Key_name2="Nomber de  Suspensions" Key_value2={0}
+                Key_name3="Nomber de date a Suspendre" Key_value3={0}
             />
 
-            <Card title="Paiment"
-                name1="Nomber de paiment par cheque" value1={13948}
-                name2="Nomber de paiment par espece" value2={47277}
-                name3="Nomber de paiment par virement" value3={807}
-                name4="Nomber de paiment par CIB" value4={0}
-                name5="Nomber de paiment par autre" value5={688}
+            <StraightPieChart_Card title="Paiment"
+                Key_name1="Nomber de paiment " Key_value1={69237}
+                Key_name2="Nomber de paiment annule" Key_value2={46}
+                Key_name3="Nomber de paiment complet" Key_value3={69104}
+                Key_name4="Nomber de paiment partie" Key_value4={87}
             />
 
-            <Card title="Paiment"
-                name1="Nomber de paiment proformat" value1={0}
-                name2="Nomber de paiment proformat CRM" value2={0}
-                name3="Nomber de paiment proformat Site" value3={0}
+            <PieChart_Card title="Paiment"
+                Key_name1="Nomber de paiment par cheque" Key_value1={13948}
+                Key_name2="Nomber de paiment par espece" Key_value2={47277}
+                Key_name3="Nomber de paiment par virement" Key_value3={807}
+                Key_name4="Nomber de paiment par CIB" Key_value4={0}
+                Key_name5="Nomber de paiment par autre" Key_value5={688}
+            />
+
+            <TowLevelPieChart_Card title="Paiment"
+                Key_name1="Nomber de paiment proformat" Key_value1={0}
+                Key_name2="Nomber de paiment proformat CRM" Key_value2={0}
+                Key_name3="Nomber de paiment proformat Site" Key_value3={0}
             />
         </div>
         </>

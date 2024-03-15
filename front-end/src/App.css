@@ -6,7 +6,8 @@
     --dark-blue : #546E7B;
     --card-color :#15a3d7 ;
     --Menu-hover : #12202c;
-    --Main-font : 'Times New Roman', Times, serif;
+    --statistic-color:#3865ac;
+    /* --Main-font : 'Times New Roman', Times, serif; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 body{

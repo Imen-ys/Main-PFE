@@ -1,15 +1,11 @@
-import "./Card.css"
 import { Statistic } from "../index";
 import { MdReadMore } from "react-icons/md";
 import { useState } from 'react';
 import {PieChart, Pie } from "recharts"
-const Card = (props) =>{
+const PieChart_Card = (props) =>{
     const data = [
-        {name : props.name1, value: props.value1, fill: '#d9b277'},
-        {name : props.name2, value: props.value2, fill: '#a7cae6'},
-        {name : props.name3, value: props.value3, fill: '#c18d91'},
-        {name : props.name4, value: props.value4, fill: '#f0593d'},
-        {name : props.name5, value: props.value5, fill: '#57cbe0'},
+        {name : props.Key_name1, value: props.Key_value1, fill: '#d9b277'},
+        {name : props.Key_name2, value: props.Key_value2, fill: '#a7cae6'},
     ]
     const [statistic, setstatistic] = useState(false);
     const click = () =>{
@@ -27,7 +23,7 @@ const Card = (props) =>{
             </div>
 
             {statistic &&(
-            <div className="w-230 h-250 ml-0 mr-0 mb-0 mt-30 border border-solid border-light-color bg-dark ">
+            <div className="w-[230px] h-[220px] ml-5  mb-0 mt-30 border border-solid border-light-color bg-[--statistic-color] shadow-md ">
                     <PieChart width={200} height={140}>
                         <Pie
                             dataKey="value"
@@ -41,11 +37,8 @@ const Card = (props) =>{
                     </PieChart>
 
                 <div className='m-neg-14 m-3 mb-5 mr-0'>
-                    <Statistic color="#d9b277" details={props.name1}/>
-                    <Statistic color="#a7cae6" details={props.name2}/>
-                    <Statistic color="#c18d91" details={props.name3}/>
-                    <Statistic color="#f0593d" details={props.name4}/>
-                    <Statistic color="#57cbe0" details={props.name5}/>
+                    <Statistic color="#d9b277" details={props.Key_name1}/>
+                    <Statistic color="#a7cae6" details={props.Key_name2}/>
                 </div>
                 </div>
                 )}
@@ -53,4 +46,4 @@ const Card = (props) =>{
         </>
     )
 }
-export default Card
+export default PieChart_Card
