@@ -1,5 +1,5 @@
 import './Dashboard.css'
-import {PieChart_Card , StraightPieChart_Card , TowLevelPieChart_Card } from '../index';
+import {PieChart_Card , StraightPieChart_Card , TowLevelPieChart_Card ,BarChart_Card} from '../index';
 
 
 const Dashboard = () => {
@@ -38,7 +38,7 @@ const Dashboard = () => {
                 Key_name4="Nomber de paiment partie" Key_value4={87}
             />
 
-            <PieChart_Card title="Paiment"
+            <BarChart_Card title="Paiment"
                 Key_name1="Nomber de paiment par cheque" Key_value1={13948}
                 Key_name2="Nomber de paiment par espece" Key_value2={47277}
                 Key_name3="Nomber de paiment par virement" Key_value3={807}
