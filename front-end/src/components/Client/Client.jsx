@@ -40,7 +40,7 @@ const Client = () => {
     ]
     return (
         <>
-            <div className="inline-block">
+            <div>
                 <h1 className="text-[--light-color] text-3xl m-4">Client</h1>
                 <div className='Search'>
                     <input
