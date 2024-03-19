@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
+import ClientReducer from './ClientReduser'
+
 
 export const store = configureStore({
   reducer: {
-    //user
+    Client : ClientReducer
   },
 })
 
