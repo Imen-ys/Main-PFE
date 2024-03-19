@@ -4,6 +4,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { GrDocumentUpdate } from "react-icons/gr";
 import { MdOutlineMonetizationOn } from "react-icons/md";
 import {useSelector} from 'react-redux'
+import { Link } from 'react-router-dom';
 const Client = () => {
     // const columns = [
     //     {
@@ -78,7 +79,7 @@ const Client = () => {
                                 <td>{client.Email}</td>
                                 <td>{client.Address}</td>
                                 <td>
-                                    <button className='border-none ml-1 px-1 py-1'><a href="#"><GrDocumentUpdate /></a></button>
+                                    <button className='border-none ml-1 px-1 py-1'><a href="/Update"><GrDocumentUpdate  /></a></button>
                                     <button className='border-none ml-1 px-1 py-1'><a href="#"><MdOutlineMonetizationOn /></a></button>
                                 </td>
                             </tr>

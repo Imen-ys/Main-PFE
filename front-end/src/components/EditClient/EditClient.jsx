@@ -1,4 +1,3 @@
-import "./AddClient.css"
 import { Select, Input , Style} from "../index"
 import { useState, useEffect } from "react";
 import axios from 'axios'
@@ -49,11 +48,23 @@ const AddClient = () => {
     //         console.log(result)
     // }
 
-
+    async function update(event){
+    //     event.preventDefault();
+    //     // try{
+    //     //     await axios.put("http://127.0.0.1:8000/Update"+ Clients.find(u => u.id === id).id || id,
+    //     // {
+        
+    //     });
+    //     alert("Student Updated");
+    //     }
+    //     catch(err){
+    //         alert(" Student updated Failed");
+    //     }
+    }
 
     return (
         <>
-            <form  method="post" action="{% url 'formulaire_client' %}" onSubmit={handleSubmit}>
+            <form  method="post" action="{% url 'formulaire_client' %}" >
                 <h1 className="text-[--light-color] text-2xl">Ajouter un client:</h1>
                 {/* {% csrf_token %} */}
                 <div style={{ display: "block" }}>
@@ -111,7 +122,7 @@ const AddClient = () => {
 
                         <Select name="Dossier validé :" value_1="Y" value_2="N" choix1="oui" choix2="Non" id="Dossier_validé" value="Dossier_validé" onChange={e => setDossier_validé(e.target.value)}/>
                         <Select name="Status:" value_1="A" value_2="I" choix1="Actif" choix2="Inactif" id="status" value="Status" onChange={e => setvalid(e.target.value)}/>
-                        <button type="submit" className="text-xs bg-card-color text-light-color border-2 border-outset border-card-color py-1 px-2" onClick={Edit}>Update</button>
+                        <button type="submit" className="text-xs bg-card-color text-light-color border-2 border-outset border-card-color py-1 px-2" onClick={update}>Update</button>
                     </div>
             </form>
         </>
